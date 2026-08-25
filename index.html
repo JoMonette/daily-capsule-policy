@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,12 +12,18 @@
 
     <h1>Privacy Policy – Library Drops</h1>
 
-    <p>Last updated: August 17, 2026</p>
+    <p>Last updated: August 25, 2026</p>
 
     <p>
         Library Drops respects your privacy. The app is designed to provide
         short-form content such as facts, educational information,
         entertainment, humor, and other messages based on the topics you choose.
+    </p>
+
+    <p>
+        Library Drops can be used as a Guest without providing your name,
+        email address, or Apple account information. You may also choose to
+        sign in to synchronize supported Library Drops data across devices.
     </p>
 
     <h2>Information We Collect</h2>
@@ -27,9 +34,14 @@
 
     <ul>
         <li>
-            Account information provided through your sign-in provider,
-            such as your email address, display name, user identifier,
-            and authentication provider
+            For Guest users, an anonymous Firebase Authentication identifier
+            used to associate app data with the Guest session
+        </li>
+
+        <li>
+            For signed-in users, account information provided through the
+            sign-in provider, such as email address, display name, user
+            identifier, and authentication provider
         </li>
 
         <li>
@@ -55,21 +67,45 @@
     </ul>
 
     <p>
-        The information available to Library Drops may depend on the
-        information you choose to provide through your sign-in provider.
+        Guest use does not require you to provide a name, email address,
+        Apple ID, Google account, or other personal sign-in information.
     </p>
 
-    <h2>Sign-In Services</h2>
+    <p>
+        The information available to Library Drops for signed-in users may
+        depend on the information you choose to provide through your sign-in
+        provider.
+    </p>
+
+    <h2>Guest Access and Sign-In Services</h2>
 
     <p>
-        Library Drops uses Firebase Authentication to manage user accounts.
-        Depending on the platform, users may sign in using:
+        Library Drops uses Firebase Authentication to manage Guest sessions
+        and signed-in accounts.
+    </p>
+
+    <p>
+        Guest users are assigned an anonymous Firebase Authentication
+        identifier. This identifier allows Library Drops to associate
+        selections, Favorites, History, notifications, and other supported
+        app data with the Guest session without requiring personal sign-in
+        information.
+    </p>
+
+    <p>
+        Depending on the platform, users may also choose to sign in using:
     </p>
 
     <ul>
         <li>Sign in with Apple on iOS</li>
         <li>Google Sign-In on Android</li>
     </ul>
+
+    <p>
+        If a Guest later chooses to sign in, supported Guest data may be
+        linked or merged with the signed-in Library Drops account so that
+        the user's Library can be retained and synchronized.
+    </p>
 
     <p>
         Authentication providers may process information according to their
@@ -83,18 +119,23 @@
     </p>
 
     <ul>
-        <li>Authenticate and maintain your account</li>
+        <li>Maintain your Guest session or signed-in account</li>
 
         <li>
             Personalize Drops based on the topics you select
         </li>
 
         <li>
-            Save and synchronize your selected categories and subcategories
+            Save and synchronize selected categories and subcategories
         </li>
 
         <li>
-            Save your Favorites and notification History
+            Save Favorites and notification History
+        </li>
+
+        <li>
+            Retain supported Guest data when you choose to connect it
+            to a signed-in account
         </li>
 
         <li>
@@ -123,9 +164,15 @@
     </p>
 
     <p>
-        Firebase Authentication is used to manage account authentication.
-        Cloud Firestore is used to store account information, preferences,
-        Favorites, History, and information needed to support app features.
+        Firebase Authentication is used to manage anonymous Guest sessions
+        and signed-in accounts. Cloud Firestore is used to store profile
+        information, preferences, Favorites, History, and information needed
+        to support app features.
+    </p>
+
+    <p>
+        Guest data is associated with an anonymous Firebase identifier rather
+        than requiring a personal name or email address.
     </p>
 
     <p>
@@ -228,7 +275,8 @@
 
     <p>
         Library Drops may offer optional subscriptions and one-time support
-        purchases.
+        purchases. These purchases are available to both Guest users and
+        signed-in users where supported.
     </p>
 
     <p>
@@ -315,14 +363,26 @@
     <h2>Data Retention</h2>
 
     <p>
-        Account-related information is retained while your Library Drops
+        Signed-in account information is retained while your Library Drops
         account remains active or while it is needed to provide the app's
         features.
     </p>
 
     <p>
+        Guest information is associated with an anonymous Firebase identifier
+        and may remain stored remotely while the Guest session remains active
+        or while needed to provide app functionality.
+    </p>
+
+    <p>
+        When Guest data is merged into an existing signed-in account, a prior
+        anonymous backend record may remain until it is removed through
+        Library Drops maintenance or deletion processes.
+    </p>
+
+    <p>
         Deleting the Library Drops app from your device does not automatically
-        delete information associated with your account that is stored remotely.
+        delete remotely stored account or Guest information.
     </p>
 
     <p>
@@ -330,17 +390,24 @@
         to their own retention policies and legal obligations.
     </p>
 
-    <h2>Account and Data Deletion</h2>
+    <h2>Account and Guest Data Deletion</h2>
 
     <p>
-        You can permanently delete your Library Drops account from within
-        the app by opening Settings and selecting Delete Account.
+        Signed-in users can permanently delete their Library Drops account
+        from within the app by opening Settings and selecting Delete Account.
     </p>
 
     <p>
-        Account deletion removes your Library Drops profile and associated
-        app data controlled by Library Drops, including your selected topics,
-        Favorites, History, and prepared notification information.
+        Guest users can permanently remove the active Guest profile and
+        associated Library Drops data by opening Settings and selecting
+        Delete Guest Data.
+    </p>
+
+    <p>
+        Deletion removes the Library Drops profile and associated app data
+        controlled by Library Drops for the selected account or Guest session,
+        including selected topics, Favorites, History, and prepared
+        notification information.
     </p>
 
     <p>
@@ -350,7 +417,7 @@
     </p>
 
     <p>
-        Account deletion is permanent and cannot be undone.
+        Account and Guest data deletion is permanent and cannot be undone.
     </p>
 
     <h2>Your Choices</h2>
@@ -358,13 +425,16 @@
     <p>You can:</p>
 
     <ul>
+        <li>Use Library Drops as a Guest without personal account registration</li>
+        <li>Choose to sign in and synchronize supported Library data</li>
         <li>Change your selected topics within the app</li>
         <li>Add or remove Favorites</li>
         <li>Disable notifications through your device settings</li>
         <li>Manage available advertising privacy choices when applicable</li>
         <li>Purchase, restore, or manage supported subscriptions</li>
-        <li>Sign out of your account</li>
-        <li>Delete your account from the Settings screen</li>
+        <li>Sign out of a signed-in account</li>
+        <li>Delete a signed-in account from Settings</li>
+        <li>Delete active Guest data from Settings</li>
     </ul>
 
     <h2>Changes to This Privacy Policy</h2>
@@ -383,8 +453,12 @@
     </p>
 
     <p>
-        Email: librarydropsapp@outlook.com
+        Email:
+        <a href="mailto:librarydropsapp@outlook.com">
+            librarydropsapp@outlook.com
+        </a>
     </p>
 
 </body>
 </html>
+```
